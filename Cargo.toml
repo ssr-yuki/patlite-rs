@@ -1,0 +1,12 @@
+[package]
+authors = ["Yuki Onishi <yuki.st16@gmail.com>"]
+edition = "2021"
+license = "MIT"
+name = "patlite"
+repository = "https://github.com/ssr-yuki/patlite-rs"
+version = "0.1.0"
+
+[dependencies]
+# Ubuntu is assumed to be used.
+# You need to install `libhidapi-dev` via `apt` command
+hidapi = {version = "1.3.3", default-features = false, features = ["linux-shared-hidraw"]}
